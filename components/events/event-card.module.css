@@ -1,0 +1,120 @@
+.eventCard {
+    position: relative;
+    display: block;
+    width: 80%;
+    border: 0px solid transparent;
+    border-radius: 0.5em;
+    box-shadow: 5px 5px 15px rgb(14, 7, 41);
+    padding: 1em;
+}
+.eventCard:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.eventCard.raid {
+    background: linear-gradient(-45deg, rgb(41, 18, 75), rgb(15, 15, 15));
+}
+.eventCard.raid:before {
+    background-image: url('https://i.imgur.com/XqzeyRI.png');
+}
+
+.eventCard.dungeon {
+    background: linear-gradient(-45deg, #580923, rgb(15, 15, 15));
+}
+.eventCard.dungeon:before {
+    background-image: url('https://i.imgur.com/kuxwTGd.png');
+}
+
+.eventCard header {
+    position: relative;
+    display: flex;
+}
+
+.eventCard content {
+    position: relative;
+    display: flex;
+}
+
+.eventCard footer {
+    position: relative;
+    display: flex;
+    border-top: 0;
+    margin-top: 0.1em;
+    height: auto;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #aaa;
+    text-shadow: 0.1em 0.1em #000;
+}
+.eventCard footer div {
+    flex: max-content;
+}
+.eventCreated {
+    text-align: right;
+}
+
+.cardPrimary {
+    flex: max-content;
+}
+.eventTitle {
+    color: white;
+    font-family: DestinyFont, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0.1em 0.3em #aaa;
+}
+.eventType {
+    color: rgb(111, 93, 194);
+    font-family: DestinyFont, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: 0.05em 0.05em 0.3em rgb(66, 66, 66);
+}
+.eventDescription {
+
+}
+.cardStatus {
+}
+.eventDate {
+    font-family: DestinyFont, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    /* text-shadow: 0.1em 0.1em 0.3em #aaa; */
+}
+.eventTime {
+    color: white;
+    font-family: DestinyFont, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    /* text-shadow: 0.1em 0.1em 0.3em #aaa; */
+    text-align: right;
+}
+.joinColumn {
+    width: 30%;
+    margin: 1em;
+}
+.joinTitle {
+    color: white;
+    font-family: DestinyFont, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.joinedMembers {
+    font-family: Helvetica, Arial, sans-serif;
+    color:rgb(68, 117, 234);
+    text-shadow: 0.05em 0.05em 0.3em rgb(25, 30, 58);
+}
